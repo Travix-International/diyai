@@ -1,23 +1,25 @@
-# diyai
+# travix-di
 
 > Dependency Injection (DI) made easy in JavaScript/ES6
 
-[![npm](https://img.shields.io/npm/v/diyai.svg)](https://www.npmjs.com/package/diyai) [![Build Status](https://img.shields.io/travis/fahad19/diyai/master.svg)](http://travis-ci.org/fahad19/diyai) [![Coverage](https://img.shields.io/coveralls/fahad19/diyai.svg)](https://coveralls.io/github/fahad19/diyai)
+[![npm](https://img.shields.io/npm/v/travix-di.svg)](https://www.npmjs.com/package/travix-di) [![Build Status](https://img.shields.io/travis/Travix-International/travix-di/master.svg)](http://travis-ci.org/Travix-International/travix-di) [![Coverage](https://img.shields.io/coveralls/Travix-International/travix-di.svg)](https://coveralls.io/github/Travix-International/travix-di)
+
+**Note**: This is a fork of [diyai](https://github.com/fahad19/diyai).
 
 ## Installation
 
 With [npm](https://www.npmjs.com/):
 
 ```
-$ npm install --save diyai
+$ npm install --save travix-di
 ```
 
 With [unpkg](https://unpkg.com) CDN:
 
 ```html
-<script src="https://unpkg.com/diyai@0.x/dist/diyai.min.js"></script>
+<script src="https://unpkg.com/travix-di@0.x/dist/travix-di.min.js"></script>
 <script>
- // now available in `window.Diyai`
+ // now available in `window.TravixDI`
 </script>
 ```
 
@@ -30,7 +32,7 @@ Let's start by defining a simple container first.
 When defining the providers, we can directly assign values for them via the `useValue` key.
 
 ```js
-import { createContainer, resolveContainer } from 'diyai';
+import { createContainer, resolveContainer } from 'travix-di';
 
 const Container = createContainer([
   { name: 'foo', useValue: 'foo value' },
@@ -72,7 +74,7 @@ We can also pass functions in the Container definition for the providers, and th
 For that, we will use the `useFactory` key:
 
 ```js
-import { createContainer, resolveContainer } from 'diyai';
+import { createContainer, resolveContainer } from 'travix-di';
 
 const Container = createContainer([
   { name: 'foo', useFactory: () => 'foo value' },
@@ -101,7 +103,7 @@ class Foo {
 Or, they can be created with the handy `createClass` function shipped with this library:
 
 ```js
-import { createClass } from 'diyai';
+import { createClass } from 'travix-di';
 
 const Foo = createClass({
   text: function () {
@@ -178,7 +180,7 @@ The `deps` key can also be provided as an object instead of an array, where the 
 Creates and returns a class.
 
 ```js
-import { createClass } from 'diyai';
+import { createClass } from 'travix-di';
 
 const MyClass = createClass({
   initialize(deps) {
