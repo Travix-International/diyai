@@ -2,9 +2,9 @@ module.exports = {
   entry: __dirname + '/../',
   output: {
     path: __dirname,
-    filename: 'diyai.js',
+    filename: 'travix-di.js',
     libraryTarget: 'this',
-    library: 'Diyai'
+    library: 'TravixDI'
   },
   externals: {}
 };

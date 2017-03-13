@@ -1,5 +1,5 @@
 {
-  "name": "diyai",
+  "name": "travix-di",
   "version": "1.0.0",
   "description": "Dependency Injection (DI) made easy in JavaScript/ES6",
   "main": "index.js",
@@ -11,16 +11,16 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "transpile": "babel src --out-dir lib",
     "dist:lib": "webpack --config ./dist/webpack.config.js",
-    "dist:min": "uglifyjs dist/diyai.js --output dist/diyai.min.js",
+    "dist:min": "uglifyjs dist/travix-di.js --output dist/travix-di.min.js",
     "dist": "npm run dist:lib && npm run dist:min"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fahad19/diyai.git"
+    "url": "https://github.com/Travix-International/travix-di.git"
   },
   "author": {
     "name": "Fahad Ibnay Heylaal",
-    "url": "https://github.com/fahad19"
+    "url": "https://github.com/Travix-International"
   },
   "keywords": [
     "dependency",
