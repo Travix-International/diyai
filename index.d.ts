@@ -4,20 +4,7 @@ export function createClass(...args: any[]): Class<GeneratedClass>;
 
 export function createContainer(...args: any[]): Class<Container>;
 
-export function resolveContainer(Container: any): Container;
-
-export namespace createClass {
-    const name: string;
-
-}
-
-export namespace createContainer {
-    const name: string;
-}
-
-export namespace resolveContainer {
-    const name: string;
-}
+export function resolveContainer<T extends Container>(Container: Class<T>): T;
 
 export class Container {
   constructor();
